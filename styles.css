@@ -94,7 +94,7 @@ main {
 .row-card:hover,
 .row-card:focus,
 
-.row-card:active{
+.row-card:active {
   color: #0070f3;
   border-color: #0070f3;
 
@@ -126,60 +126,65 @@ main {
     flex-direction: column;
   }
 }
+
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: black;
-    color: white;
-    
-  }
-  
-  .header, .sidebar, .footer {
-    margin: 1rem;
-    padding: 1.5rem;
-    text-align: left;
-    color: inherit;
-    text-decoration: none;
-    border: 1px solid #eaeaea;
-    border-radius: 10px;
-    transition: color 0.15s ease, border-color 0.15s ease;
-    color: white;
-  }
-  
-  .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    height: 70px; /* Adjust to fix Header/Sidebar Overlap if needed*/
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+  color: white;
+
+
+}
+
+.header,
+.sidebar,
+.footer {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  color: white;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 70px;
+  /* Adjust to fix Header/Sidebar Overlap if needed*/
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
-  }
-  
-  .sidebar {
-    position: fixed;
-    top: 70px; 
-    left: 0;
-    height: calc(100% - 70px); 
-    width: 250px; 
-    padding: 10px; 
-    overflow: auto;
-  }
-   
+}
+
+.sidebar {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  height: calc(100% - 70px);
+  width: 250px;
+  padding: 10px;
+  overflow: auto;
+}
+
 
 
 .sidebar {
   position: fixed;
-  top: 70px; 
+  top: 70px;
   left: 0;
-  width: 200px; 
-  height: calc(100vh - 172px); 
-  overflow: auto; 
+  width: 200px;
+  height: calc(100vh - 172px);
+  overflow: auto;
 }
 
 .footer {
@@ -187,29 +192,30 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 70px; 
+  height: 70px;
 }
 
 .main {
-  margin-top: 70px; 
-  margin-left: 220px; 
-  margin-bottom: 70px; 
-  height: calc(100vh - 140px); 
+  margin-top: 70px;
+  margin-left: 220px;
+  margin-bottom: 200px;
+  height: calc(100vh - 140px);
 }
-  
-  
+
+
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 70px; 
-  padding-right: 200px; 
+  position: relative;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 270px;
 }
-  
-  .main {
-    margin-top: 70px; 
-    margin-left: 220px; 
-    margin-bottom: 10px; 
-    height: calc(100vh - 140px); 
-  }
+
+
+.main {
+  margin-top: 70px;
+  margin-left: 220px;
+  margin-bottom: 10px;
+  height: calc(100vh - 140px);
+}
