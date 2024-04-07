@@ -9,10 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Function to handle input from buttons
     function handleButtonInput(input) {
         if (input === '=') {
-            // Evaluate expression
             try {
                 const result = eval(display.value);
                 display.value = result;
