@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const addTaskBtn = document.getElementById('add-task-btn');
     const taskList = document.getElementById('task-list');
 
-    // Retrieve tasks from localStorage on page load
     let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
     // Display existing tasks
@@ -15,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const taskContent = taskInput.value.trim();
         if (taskContent !== '') {
             addTask(taskContent);
-            taskInput.value = ''; // Clear the input field after adding the task
+            taskInput.value = ''; 
         }
     });
 
@@ -35,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
         `;
         taskList.appendChild(taskItem);
 
-        // Add event listener to the delete button
+
         const deleteBtn = taskItem.querySelector('.delete-btn');
         deleteBtn.addEventListener('click', function() {
             taskItem.remove();
